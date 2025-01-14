@@ -1,0 +1,126 @@
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 700px;
+    background: url('login-bg.jpg');
+    background-size: cover;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fffbfb;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.749);
+    border-radius: 8px;
+}
+
+.login-card {
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 35px;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-control {
+    padding-left: 10px;
+    padding-right: 20px;
+    width: 100%;
+    min-height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ffffffc6;
+    background-color: rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    color: white;
+}
+
+.form-control::placeholder {
+    color: white;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.form-control:focus::placeholder {
+    font-size: 12px;
+    opacity: 1;
+    transform: translateY(-15px);
+    transition: font-size 0.3s, opacity 0.3s;
+}
+
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+}
+
+.eye-icon i {
+    font-size: 15px;
+    color: white;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background-color: #9a1515;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.text-center a {
+    color: #0ed732;
+    text-decoration: none;
+}
+
+.text-center a:hover {
+    text-decoration: underline;
+}
+
+.form-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Error icon styling */
+.form-message i {
+    margin-right: 5px;
+    color: red;
+}

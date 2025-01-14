@@ -1,0 +1,288 @@
+
+/* HEADER STYLES */
+#header-homepage {
+    background-image: url("header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 450px; 
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.text-content {
+    max-width: 80%;
+}
+
+.text-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    padding-left: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text-content p {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    padding-left: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* RESPONSIVE STYLES */
+
+@media (max-width: 412px) {
+    header {
+        min-height: 300px; 
+        padding: 10px;
+    }
+
+    .text-content {
+        max-width: 95%;
+        padding: 0 15px;
+    }
+
+    .text-content h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .text-content p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+}
+
+/* Trending  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#trending-now {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Section header (left-aligned) */
+.section-header {
+    width: 100%;
+    text-align: left; /* Align text to the left */
+    font-size: 18px; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-top: 20px;
+    padding-left: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    display: flex;
+    position: relative;
+    justify-content: center; /* Center the images */
+    align-items: center;
+    flex-grow: 1; /* Allow the container to take up the remaining space */
+    width: 100%;
+}
+
+/* Scrollable container for images */
+.image-wrapper {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    gap: 15px;
+    width: 100%;
+    padding: 10px;
+    flex-grow: 1;
+    scroll-snap-type: x mandatory; 
+}
+
+.movie-item {
+    min-width: 180px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px; 
+    scroll-snap-align: center;
+}
+
+/* Style for images */
+.movie-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Caption Styling */
+.movie-item p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+    color: #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.movie-item a{
+    text-decoration: none;
+}
+.movie-item a:hover{
+    background-color: transparent;
+    transform: scale(1.1);
+}
+/* Trailers */
+.section-headertrailer {
+    width: 100%;
+    text-align: left; /* Align text to the left */
+    font-size: 18px; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+#trending-trailers .trailer-container {
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    background-color: #4e1b1bdd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    transition: background-image 0.5s ease-in-out; 
+    background-blend-mode: overlay;
+}
+
+.trailer-wrapper {
+    display: flex;
+}
+
+.trailer-item {
+    margin-right: 30px; /* Space between trailer items */
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom-in effect */
+    cursor: pointer;
+}
+
+iframe {
+    padding-right: 20px;
+}
+
+.trailer-item p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ddd;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    text-transform: uppercase;
+    background-color: #111111af;
+}
+
+/* RESPONSIVE STYLING */
+@media (max-width: 412px) {
+
+    /* Section Header */
+    .section-header {
+        font-size: 16px; 
+        padding-left: 10px; 
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        width: 100%; 
+        padding: 0 10px; 
+    }
+
+    .image-wrapper {
+        gap: 8px; 
+    }
+
+    .movie-item {
+        min-width: 150px; 
+        padding: 8px;
+    }
+
+    .movie-item img {
+        height: 150px; 
+    }
+
+    .movie-item p {
+        font-size: 14px;
+    }
+}
+
+/* Hover effect for scaling the trailer item */
+.trailer-item:hover {
+    transform: scale(1.1); /* Zoom in effect */
+}
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 412px) {
+    .section-headertrailer {
+        font-size: 16px;
+        margin-top: 30px;
+        padding-left: 10px;
+    }
+
+    #trending-trailers .trailer-container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        flex-wrap: nowrap; 
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    .trailer-wrapper {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+    }
+
+    .trailer-item {
+        margin-right: 15px;
+        width: 220px; 
+    }
+
+    iframe {
+        width: 100%; 
+        height: auto;
+    }
+
+    .trailer-item p {
+        font-size: 12px; 
+        margin-top: 5px;
+        padding: 5px;
+        max-width: 200px;
+    }
+    .trailer-item a{
+        text-decoration: none;
+    }
+    .trailer-item:hover {
+        transform: scale(1);
+    }
+}

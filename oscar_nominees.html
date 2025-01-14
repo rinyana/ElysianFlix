@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oscar Nominees </title>
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="topratedpage.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <!-- Logo and Main Navigation -->
+        <div class="navbar-logo">
+            <a href="homepage.html"><img src="Logo.png" alt="ElysianFlix Logo"></a>
+        </div>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- navbar -->
+        <div class="navbar-navigation">
+            <ul class="nav-bar">
+                <li><a href="genre.html">Genre</a></li>
+                <li><a href="popular_page.html">Popular</a></li>
+                <li><a href="top_rated_page.html">Top Rated</a></li>
+                <li><a href="oscar_nominees.html">Oscar Nominee</a></li>
+                <li><a href="oscar_award.html">Oscar Award</a></li>
+            </ul>
+        </div>
+
+        <!-- Search and Auth Buttons -->
+        <div id="auth-section">
+            <div class="search-container">
+                <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search..." title="Movie title">
+                <ul id="myMenu" class="suggestions">
+                    <!-- Safiya -->
+                    <li><img src="the-substance.avif" alt="The Substance" class="suggestion-img"><a href="The substance.html">The Substance</a></li>
+                    <li><img src="black-swan.jpg" alt="Black Swan" class="suggestion-img"><a href="black swan.html">Black Swan</a></li>
+                    <li><img src="the-exorcist.jpg" alt="The Exorcist" class="suggestion-img"><a href="The Exorcist.html">The Exorcist</a></li>
+                    <li><img src="rebel-ridge.jpg" alt="Rebel Ridge" class="suggestion-img"><a href="rebel ridge.html">Rebel Ridge</a></li>
+                    <li><img src="die-hard.jpg" alt="Die Hard" class="suggestion-img"><a href="die hard.html">Die Hard</a></li>
+                    <li><img src="gladiator.jpg" alt="Gladiator" class="suggestion-img"><a href="gladiator.html">Gladiator</a></li>
+                    <li><img src="top-gun-maverick.jpg" alt="Top Gun: Maverick" class="suggestion-img"><a href="Top gun maverick.html">Top Gun: Maverick</a></li>
+                    <li><img src="avatar.jpg" alt="Avatar" class="suggestion-img"><a href="Avatar.html">Avatar</a></li>
+                    <li><img src="pirates-of-caribbean.jpg" alt="Pirates Of Caribbean" class="suggestion-img"><a href="pirates of caribbean.html">Pirates of Caribbean</a></li>
+                    <li><img src="the-martian.jpg" alt="The Martian" class="suggestion-img"><a href="the martian.html">The Martian</a></li>
+                    <li><img src="uncharted.jpg" alt="Uncharted" class="suggestion-img"><a href="uncharted.html">Uncharted</a></li>
+                    <li><img src="schindler-list.jpg" alt="Schindler's List" class="suggestion-img"><a href="schindler list.html">Schindler's List</a></li>
+                    <li><img src="moneyball.jpg" alt="Moneyball" class="suggestion-img"><a href="moneyball.html">Moneyball</a></li>
+                    <li><img src="judy.jpg" alt="Judy" class="suggestion-img"><a href="Judy.html">Judy</a></li>
+                    <li><img src="the-trial-of-chicago.jpg" alt="The Trial of Chicago 7" class="suggestion-img"><a href="The Trial of the Chicago 7.html">The Trial of Chicago 7</a></li>
+                    <!-- nurin -->
+                    <li><img src="the-boy-and-the-heron.jpg" alt="The Boy And The Heron" class="suggestion-img"><a href="TBATH.html">The Boy And The Heron</a></li>
+                    <li><img src="oppenheimer.jpg" alt="Oppeinheimer" class="suggestion-img"><a href="Oppenheimer.html">Oppenheimer</a></li>
+                    <li><img src="the-departed.jpg" alt="The Departed" class="suggestion-img"><a href="The Departed.html">The Departed</a></li>
+                    <li><img src="parasite.jpg" alt="Parasite" class="suggestion-img"><a href="Parasite.html">Parasite</a></li>
+                    <li><img src="Elemental.jpg" alt="Elemental" class="suggestion-img"><a href="Elemental.html">Elemental</a></li>
+                    <li><img src="the-fugitive.jpg" alt="The Fugitive" class="suggestion-img"><a href="The Fugitive.html">The Fugitive</a></li>
+                    <li><img src="Anatomy-of-fall.jpg" alt="Anatomy of Fall" class="suggestion-img"><a href="Anatomy Of A Fall.html">Anatomy Of Fall</a></li>
+                    <li><img src="Barbie.jpg" alt="Barbie (2023)" class="suggestion-img"><a href="Barbie.html">Barbie (2023)</a></li>
+                    <li><img src="Spirited-away.jpg" alt="Spirited Away" class="suggestion-img"><a href="spirited away.html">Spirited Away</a></li>
+                    <li><img src="carry-on.jpg" alt="Carry On" class="suggestion-img"><a href="carry on.html">Carry On</a></li>
+                    <li><img src="juror.jpg" alt="Juror" class="suggestion-img"><a href="Juror.html">Juror#2</a></li>
+                    <li><img src="Red-one.jpg" alt="Red  one" class="suggestion-img"><a href="red one.html">Red One</a></li>
+                    <li><img src="howl-moving-castle.jpg" alt="Howl's Moving Castle" class="suggestion-img"><a href="howl moving castle.html">Howl's Moving Castle</a></li>
+                    <li><img src="the-darkknight.jpg" alt="The Darknight" class="suggestion-img"><a href="The Darknight.html">The Darknight</a></li>
+                    <li><img src="the-godfather.jpg" alt="the godfather" class="suggestion-img"><a href="The Godfather.html">The Godfather</a></li>
+                    <li><img src="sonic-the-hedgehog.jpg" alt="Sonic The Hedgehog 3" class="suggestion-img"><a href="sonic.html">Sonic The Hedgehog 3</a></li>
+                    <!-- haziqah -->
+                    <li><img src="a-space-odyssey.jpg" alt="A Space Odyssey" class="suggestion-img"><a href="A Space Odyssey.html">2001: A Space Odyssey</a></li>
+                    <li><img src="coco.jpg" alt="Coco" class="suggestion-img"><a href="coco.html">Coco</a></li>
+                    <li><img src="the-sound-of-music.jpg" alt="The sound of music" class="suggestion-img"><a href="the sound of music.html">The Sound Of Music</a></li>
+                    <li><img src="forest-gump.jpg" alt="Forest Gump" class="suggestion-img"><a href="forest gump.html">Forest Gump</a></li>
+                    <li><img src="the-truman-show.jpg" alt="The Truman Show" class="suggestion-img"><a href="the truman show.html">The Truman Show</a></li>
+                    <li><img src="The-beauty-and-the-beast.jpg" alt="The Beauty And The Beast" class="suggestion-img"><a href="beauty and the beast.html">The Beauty And The Beast</a></li>
+                    <li><img src="The-greatest-showman.jpg" alt="The Greatest Showman" class="suggestion-img"><a href="the greatest showman.html">The Greatest Showman</a></li>
+                    <li><img src="past-lives.jpg" alt="Past Lives" class="suggestion-img"><a href="past lives.html">Past Lives</a></li>
+                    <li><img src="Transformers.jpg" alt="Transformers: The Rise Of The Beast" class="suggestion-img"><a href="transformers.html">Transformers: The Rise Of The Beast</a></li>
+                    <li><img src="train-your-dragon.jpg" alt="HTYD: The Hidden Worldd" class="suggestion-img"><a href="HTTYD.html">How To Train Your Dragon: The Hidden World</a></li>
+                    <li><img src="trolls.jpg" alt="Trolls" class="suggestion-img"><a href="trolls.html">Trolls</a></li>
+                    <li><img src="drawing-closer.jpg" alt="Drawing Closer" class="suggestion-img"><a href="drawing closer.html">Drawing Closer</a></li>
+                    <li><img src="wall-e.jpg" alt="Wall E" class="suggestion-img"><a href="Wall e.html">Wall E</a></li>
+                    <li><img src="alvin-n-the-chipmunk.jpg" alt="Alvin and The chipmunks" class="suggestion-img"><a href="ANTC.html">Alvin And The Chipmunks: The Road Chip</a></li>
+                    <li><img src="pride-prejudice.jpg" alt="Pride And Prejudice" class="suggestion-img"><a href="pride and prejudice.html">Pride And Prejudice</a></li>
+
+                </ul>
+            </div>
+            <div class="auth-buttons">
+                <a href="Log In.html" style="padding: 5px 10px;border: 2px solid black;border-radius: 5px;">
+                    Log In</a>
+                <a href="Sign Up.html" style="padding: 5px 10px;background-color: #431010;color: white;">Join Ellysian</a>
+            </div>
+        </div>
+    </nav>
+
+    <!--for top rated movie lists-->
+    <section class="movie-container">
+        <div class="row">
+            <div class="column">
+                <div class="movie">
+                    <a href="Elemental.html">
+                        <img src="Elemental.jpg" alt="Elemental" style="width: 100%">
+                        <h4>Elemental</h4>
+                        <p><i>Nominated for Best Animated Feature Film</i></p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="movie">
+                    <a href="The Fugitive.html">
+                        <img src="the-fugitive.jpg" alt="The Fugitive" style="width: 100%">
+                        <h4>The Fugitive</h4>
+                        <p><i>Nominated for Best Cinematography</i></p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="movie">
+                    <a href="Anatomy Of A Fall.html">
+                        <img src="Anatomy-of-fall.jpg" alt="Anatomy of a Fall" style="width: 100%">
+                        <h4>Anatomy of A Fall</h4>
+                        <p><i>Nominated for Best Picture</i></p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="movie">
+                    <a href="Barbie.html">
+                        <img src="Barbie.jpg" alt="Barbie" style="width: 100%">
+                        <h4>Barbie</h4>
+                        <p><i>Nominated for Best Motion Picture</i></p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="movie">
+                    <a href="the truman show.html">
+                        <img src="the-truman-show.jpg" alt="The Truman Show" style="width: 100%">
+                        <h4>The Truman Show</h4>
+                        <p><i>Nominated for Best Director</i></p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="movie">
+                    <a href="beauty and the beast.html">
+                        <img src="The-beauty-and-the-beast.jpg" alt="Beauty and the Beast" style="width: 100%">
+                        <h4>Beauty & The Beast</h4>
+                        <p><i>Nominated for Best Sound</i></p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="movie">
+                    <a href="the greatest showman.html">
+                        <img src="The-greatest-showman.jpg" alt="The Greatest Showman" style="width: 100%">
+                        <h4>The Greatest Showman</h4>
+                        <p><i>Nominated for Best Original Song</i></p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="movie">
+                    <a href="past lives.html">
+                        <img src="past-lives.jpg" alt="Past Lives" style="width: 100%">
+                        <h4>Past Lives</h4>
+                        <p><i>Nominated for Best Original Screenplay</i></p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="movie">
+                    <a href="black swan.html">
+                        <img src="black-swan.jpg" alt="Black Swan" style="width: 100%">
+                        <h4>Black Swan</h4>
+                        <p><i>Nominated for Best Motion Picture</i></p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="movie">
+                    <a href="Top gun maverick.html">
+                        <img src="top-gun-maverick.jpg" alt="Top Gun: Maverick" style="width: 100%">
+                        <h4>Top Gun: Maverick</h4>
+                        <p><i>Nominated for Best Picture</i></p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="movie">
+                    <a href="the martian.html">
+                        <img src="the-martian.jpg" alt="The Martian" style="width: 100%">
+                        <h4>The Martian</h4>
+                        <p><i>Nominated for Best Adapted Screenplay</i></p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="movie">
+                    <a href="moneyball.html">
+                        <img src="moneyball.jpg" alt="Moneyball" style="width: 100%">
+                        <h4>Moneyball</h4>
+                        <p><i>Nominated for Best Picture</i></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+   <!-- Footer -->
+   <footer id="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="logo">
+                <img src="Logo.png" alt="Logo">
+                <a href="Sign Up.html">
+                    <button>Subscribe</button>
+                </a>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i><a href="mailto: ElysianF@gmail.com">Elysian@gmail.com</a></p>
+                <p><i class="fas fa-phone-alt"></i><a href="tel: 0530110211">05-30110211</a></p>
+                <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/">@ElysianF</a></p>
+            </div>
+            <div class="about">
+                <h3>About Us</h3>
+                <p>Welcome to ElysianFlix, your ultimate destination for the latest movie news, reviews, and trailers. 
+                    We bring you everything you need to stay up-to-date with the world of cinema, from blockbuster hits to hidden gems.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- reference to javascript -->
+<script src="navigation.js"></script>
+<script src="topratedpage.js"></script>
+</body>
+
+</html>

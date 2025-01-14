@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uncharted</title>
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="content_page.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <!-- Logo and Main Navigation -->
+        <div class="navbar-logo">
+            <a href="homepage.html"><img src="Logo.png" alt="ElysianFlix Logo"></a>
+        </div>
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- navbar -->
+        <div class="navbar-navigation">
+            <ul class="nav-bar">
+                <li><a href="genre.html">Genre</a></li>
+                <li><a href="popular_page.html">Popular</a></li>
+                <li><a href="top_rated_page.html">Top Rated</a></li>
+                <li><a href="oscar_nominees.html">Oscar Nominee</a></li>
+                <li><a href="oscar_award.html">Oscar Award</a></li>
+            </ul>
+        </div>
+
+        <!-- Search and Auth Buttons -->
+        <div id="auth-section">
+            <div class="search-container">
+                <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search..." title="Movie title">
+                <ul id="myMenu" class="suggestions">
+                    <!-- Safiya -->
+                    <li><img src="the-substance.avif" alt="The Substance" class="suggestion-img"><a href="The substance.html">The Substance</a></li>
+                    <li><img src="black-swan.jpg" alt="Black Swan" class="suggestion-img"><a href="black swan.html">Black Swan</a></li>
+                    <li><img src="the-exorcist.jpg" alt="The Exorcist" class="suggestion-img"><a href="The Exorcist.html">The Exorcist</a></li>
+                    <li><img src="rebel-ridge.jpg" alt="Rebel Ridge" class="suggestion-img"><a href="rebel ridge.html">Rebel Ridge</a></li>
+                    <li><img src="die-hard.jpg" alt="Die Hard" class="suggestion-img"><a href="die hard.html">Die Hard</a></li>
+                    <li><img src="gladiator.jpg" alt="Gladiator" class="suggestion-img"><a href="gladiator.html">Gladiator</a></li>
+                    <li><img src="top-gun-maverick.jpg" alt="Top Gun: Maverick" class="suggestion-img"><a href="Top gun maverick.html">Top Gun: Maverick</a></li>
+                    <li><img src="avatar.jpg" alt="Avatar" class="suggestion-img"><a href="Avatar.html">Avatar</a></li>
+                    <li><img src="pirates-of-caribbean.jpg" alt="Pirates Of Caribbean" class="suggestion-img"><a href="pirates of caribbean.html">Pirates of Caribbean</a></li>
+                    <li><img src="the-martian.jpg" alt="The Martian" class="suggestion-img"><a href="the martian.html">The Martian</a></li>
+                    <li><img src="uncharted.jpg" alt="Uncharted" class="suggestion-img"><a href="uncharted.html">Uncharted</a></li>
+                    <li><img src="schindler-list.jpg" alt="Schindler's List" class="suggestion-img"><a href="schindler list.html">Schindler's List</a></li>
+                    <li><img src="moneyball.jpg" alt="Moneyball" class="suggestion-img"><a href="moneyball.html">Moneyball</a></li>
+                    <li><img src="judy.jpg" alt="Judy" class="suggestion-img"><a href="Judy.html">Judy</a></li>
+                    <li><img src="the-trial-of-chicago.jpg" alt="The Trial of Chicago 7" class="suggestion-img"><a href="The Trial of the Chicago 7.html">The Trial of Chicago 7</a></li>
+                    <!-- nurin -->
+                    <li><img src="the-boy-and-the-heron.jpg" alt="The Boy And The Heron" class="suggestion-img"><a href="TBATH.html">The Boy And The Heron</a></li>
+                    <li><img src="oppenheimer.jpg" alt="Oppeinheimer" class="suggestion-img"><a href="Oppenheimer.html">Oppenheimer</a></li>
+                    <li><img src="the-departed.jpg" alt="The Departed" class="suggestion-img"><a href="The Departed.html">The Departed</a></li>
+                    <li><img src="parasite.jpg" alt="Parasite" class="suggestion-img"><a href="Parasite.html">Parasite</a></li>
+                    <li><img src="Elemental.jpg" alt="Elemental" class="suggestion-img"><a href="Elemental.html">Elemental</a></li>
+                    <li><img src="the-fugitive.jpg" alt="The Fugitive" class="suggestion-img"><a href="The Fugitive.html">The Fugitive</a></li>
+                    <li><img src="Anatomy-of-fall.jpg" alt="Anatomy of Fall" class="suggestion-img"><a href="Anatomy Of A Fall.html">Anatomy Of Fall</a></li>
+                    <li><img src="Barbie.jpg" alt="Barbie (2023)" class="suggestion-img"><a href="Barbie.html">Barbie (2023)</a></li>
+                    <li><img src="Spirited-away.jpg" alt="Spirited Away" class="suggestion-img"><a href="spirited away.html">Spirited Away</a></li>
+                    <li><img src="carry-on.jpg" alt="Carry On" class="suggestion-img"><a href="carry on.html">Carry On</a></li>
+                    <li><img src="juror.jpg" alt="Juror" class="suggestion-img"><a href="Juror.html">Juror#2</a></li>
+                    <li><img src="Red-one.jpg" alt="Red  one" class="suggestion-img"><a href="red one.html">Red One</a></li>
+                    <li><img src="howl-moving-castle.jpg" alt="Howl's Moving Castle" class="suggestion-img"><a href="howl moving castle.html">Howl's Moving Castle</a></li>
+                    <li><img src="the-darkknight.jpg" alt="The Darknight" class="suggestion-img"><a href="The Darknight.html">The Darknight</a></li>
+                    <li><img src="the-godfather.jpg" alt="the godfather" class="suggestion-img"><a href="The Godfather.html">The Godfather</a></li>
+                    <li><img src="sonic-the-hedgehog.jpg" alt="Sonic The Hedgehog 3" class="suggestion-img"><a href="sonic.html">Sonic The Hedgehog 3</a></li>
+                    <!-- haziqah -->
+                    <li><img src="a-space-odyssey.jpg" alt="A Space Odyssey" class="suggestion-img"><a href="A Space Odyssey.html">2001: A Space Odyssey</a></li>
+                    <li><img src="coco.jpg" alt="Coco" class="suggestion-img"><a href="coco.html">Coco</a></li>
+                    <li><img src="the-sound-of-music.jpg" alt="The sound of music" class="suggestion-img"><a href="the sound of music.html">The Sound Of Music</a></li>
+                    <li><img src="forest-gump.jpg" alt="Forest Gump" class="suggestion-img"><a href="forest gump.html">Forest Gump</a></li>
+                    <li><img src="the-truman-show.jpg" alt="The Truman Show" class="suggestion-img"><a href="the truman show.html">The Truman Show</a></li>
+                    <li><img src="The-beauty-and-the-beast.jpg" alt="The Beauty And The Beast" class="suggestion-img"><a href="beauty and the beast.html">The Beauty And The Beast</a></li>
+                    <li><img src="The-greatest-showman.jpg" alt="The Greatest Showman" class="suggestion-img"><a href="the greatest showman.html">The Greatest Showman</a></li>
+                    <li><img src="past-lives.jpg" alt="Past Lives" class="suggestion-img"><a href="past lives.html">Past Lives</a></li>
+                    <li><img src="Transformers.jpg" alt="Transformers: The Rise Of The Beast" class="suggestion-img"><a href="transformers.html">Transformers: The Rise Of The Beast</a></li>
+                    <li><img src="train-your-dragon.jpg" alt="HTYD: The Hidden Worldd" class="suggestion-img"><a href="HTTYD.html">How To Train Your Dragon: The Hidden World</a></li>
+                    <li><img src="trolls.jpg" alt="Trolls" class="suggestion-img"><a href="trolls.html">Trolls</a></li>
+                    <li><img src="drawing-closer.jpg" alt="Drawing Closer" class="suggestion-img"><a href="drawing closer.html">Drawing Closer</a></li>
+                    <li><img src="wall-e.jpg" alt="Wall E" class="suggestion-img"><a href="Wall e.html">Wall E</a></li>
+                    <li><img src="alvin-n-the-chipmunk.jpg" alt="Alvin and The chipmunks" class="suggestion-img"><a href="ANTC.html">Alvin And The Chipmunks: The Road Chip</a></li>
+                    <li><img src="pride-prejudice.jpg" alt="Pride And Prejudice" class="suggestion-img"><a href="pride and prejudice.html">Pride And Prejudice</a></li>
+
+                </ul>
+            </div>
+            <div class="auth-buttons">
+                <a href="Log In.html" style="padding: 5px 10px;border: 2px solid black;border-radius: 5px;">
+                    Log In</a>
+                <a href="Sign Up.html" style="padding: 5px 10px;background-color: #431010;color: white;">Join Ellysian</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- details of movie -->
+       <!-- movie trailer -->
+       <div class="container">
+        <div class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eHp3MbsCbMg?si=IFdkOfZm-EfWyQLf" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <div class="image-synopsis-container">
+            <!--poster image-->
+            <div class="image-container">
+                <img src="gladiator.jpg" alt="Uncharted" class="image">
+                <div class="overlay">Uncharted</div>
+            </div>
+
+            <!-- text box for movie synopsis -->
+            <div style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif"class="synopsis-container">
+                <h3 style="background-color:#f4a3a0; color: black; padding: 6px; border-radius: 8px;">
+                    Uncharted</h3>
+                <p><h4>Victor Sullivan recruits Nathan Drake to help him find the lost fortune of Ferdinand Magellan. 
+                    However, they face competition from Santiago Moncada, who believes that the treasure belongs to him.</h4> </p>
+            </div>
+        </div>
+
+        <h2 style="color:rgb(220, 214, 208)">Star Rating</h2>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+
+
+        <div class="review-container">
+            <!-- Reviews Header -->
+            <div class="reviews-header">
+                <h3 style="color: rgb(220, 214, 208);">User Reviews</h3>
+            </div>
+
+            <!-- Scroll Buttons -->
+            <button class="scroll-btn left" id="scrollLeft">
+                <img src="https://img.icons8.com/ios-filled/50/000000/chevron-left.png" alt="Left">
+            </button>
+            <button class="scroll-btn right" id="scrollRight">
+                <img src="https://img.icons8.com/ios-filled/50/000000/chevron-right.png" alt="Right">
+            </button>
+        
+            <!-- Review Cards Section -->
+            <div class="review-cards">
+                <!-- Individual Review Card -->
+                <div class="review-card">
+                    <div class="critic-name">Dwight Brown</div>
+                    <div class="critic-site">DwightBrownInk.com</div>
+                    <div class="review-text">
+                        Over-the-top violence is rarely this much fun. First-time directors are rarely this skillful.
+                    </div>
+                    <div class="review-meta">
+                        <span>Rated: 3.5/4 • Apr 12, 2024</span>
+                    </div>
+                </div>
+        
+                <div class="review-card">
+                    <div class="critic-name">Stephen A. Russell</div>
+                    <div class="critic-site">ScreenHub</div>
+                    <div class="review-text">
+                        Bedlam ensues, with Patel on fire, but Monkey Man also makes time for a kick-arse trans storyline that
+                        upends expectations, proving the writer/director has plenty of promise to spare.
+                    </div>
+                    <div class="review-meta">
+                        <span>Dec 10, 2024</span>
+                    </div>
+                </div>
+        
+                <!-- Add more review cards -->
+                <div class="review-card">
+                    <div class="critic-name">Stephen A. Russell</div>
+                    <div class="critic-site">ScreenHub</div>
+                    <div class="review-text">
+                        Bedlam ensues, with Patel on fire, but Monkey Man also makes time for a kick-arse trans storyline that
+                        upends expectations, proving the writer/director has plenty of promise to spare.
+                    </div>
+                    <div class="review-meta">
+                        <span>Dec 10, 2024</span>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="critic-name">Dwight Brown</div>
+                    <div class="critic-site">DwightBrownInk.com</div>
+                    <div class="review-text">
+                        Over-the-top violence is rarely this much fun. First-time directors are rarely this skillful.
+                    </div>
+                    <div class="review-meta">
+                        <span>Rated: 3.5/4 • Apr 12, 2024</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <img src="Logo.png" alt="Logo">
+                    <a href="Sign Up.html">
+                        <button>Subscribe</button>
+                    </a>
+                </div>
+                <div class="contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i><a href="mailto: ElysianF@gmail.com">Elysian@gmail.com</a></p>
+                    <p><i class="fas fa-phone-alt"></i><a href="tel: 0530110211">05-30110211</a></p>
+                    <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/">@ElysianF</a></p>
+                </div>
+                <div class="about">
+                    <h3>About Us</h3>
+                    <p>Welcome to ElysianFlix, your ultimate destination for the latest movie news, reviews, and trailers. 
+                        We bring you everything you need to stay up-to-date with the world of cinema, from blockbuster hits to hidden gems.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- reference to javascript -->
+    <script src="content_page.js"></script>
+    <script src="navigation.js"></script>
+    
+</body>
+</html>
