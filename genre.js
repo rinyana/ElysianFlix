@@ -1,6 +1,6 @@
 const movieData = {
     genre: [
-        { title: "The Exorcist", image: "the-exorcist.jpg", link: "the exorcist.html" },
+        { title: "The Exorcist", image: "the-exorcist.jpg", link: "The Exorcist.html" },
         { title: "Black Swan", image: "black-swan.jpg", link: "black swan.html" },
         { title: "Hereditary", image: "hereditary.jpg", link: "hereditary.html" },
         { title: "The Substance", image: "the-substance.avif", link: "the substance.html" },
@@ -49,7 +49,7 @@ const movieData = {
         { title: "The Trial of the Chicago 7", image: "the-trial-of-chicago.jpg", link: "the trial of the chicago 7.html" }
     ],
     horror: [
-        { title: "The Exorcist", image: "the-exorcist.jpg", link: "the exorcist.html" },
+        { title: "The Exorcist", image: "the-exorcist.jpg", link: "The Exorcist.html" },
         { title: "Black Swan", image: "black-swan.jpg", link: "black swan.html" },
         { title: "Hereditary", image: "hereditary.jpg", link: "hereditary.html" },
         { title: "The Substance", image: "the-substance.avif", link: "the substance.html" }
