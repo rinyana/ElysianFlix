@@ -6,29 +6,29 @@ const movieData = {
         { title: "The Substance", image: "the-substance.avif", link: "the substance.html" },
         { title: "Parasite", image: "parasite.jpg", link: "parasite.html" },
         { title: "Barbie (2023)", image: "Barbie.jpg", link: "barbie.html" },
-        { title: "Red One", image: "red-one.jpg", link: "red one.html" },
+        { title: "Red One", image: "Red-one.jpg", link: "red one.html" },
         { title: "Sonic The Hedgehog 3", image: "sonic-the-hedgehog.jpg", link: "sonic.html" },
         { title: "Oppenheimer", image: "oppenheimer.jpg", link: "oppenheimer.html" },
         { title: "The Fugitive", image: "the-fugitive.jpg", link: "the fugitive.html" },
         { title: "Carry On", image: "carry-on.jpg", link: "carry on.html" },
         { title: "The Dark Knight", image: "the-darkknight.jpg", link: "the darknight.html" },
         { title: "The Boy And The Heron", image: "the-boy-and-the-heron.jpg", link: "TBATH.html" },
-        { title: "Elemental", image: "elemental.jpg", link: "elemental.html" },
+        { title: "Elemental", image: "Elemental.jpg", link: "elemental.html" },
         { title: "Spirited Away", image: "Spirited-away.jpg", link: "spirited away.html" },
         { title: "Howl's The Moving Castle", image: "howl-moving-castle.jpg", link: "howls moving castle.html" },
         { title: "The Departed", image: "the-departed.jpg", link: "the departed.html" },
-        { title: "Anatomy Of A Fall", image: "anatomy-of-fall.jpg", link: "anatomy of fall.html" },
+        { title: "Anatomy Of A Fall", image: "Anatomy-of-fall.jpg", link: "anatomy of fall.html" },
         { title: "Juror #2", image: "juror.jpg", link: "juror.html" },
         { title: "The Godfather", image: "the-godfather.jpg", link: "the godfather.html" },
         { title: "2001: A Space Odyssey", image: "a-space-odyssey.jpg", link: "a space odyssey.html" },
         { title: "The Truman Show", image: "the-truman-show.jpg", link: "the truman show.html" },
-        { title: "Transformers: The Rise of the Beasts", image: "transformers.jpg", link: "transformers.html" },
+        { title: "Transformers: The Rise of the Beasts", image: "Transformers.jpg", link: "transformers.html" },
         { title: "Coco", image: "coco.jpg", link: "coco.html" },
-        { title: "Beauty and the Beast", image: "the-beauty-and-the-beast.jpg", link: "beauty and the beast.html" },
+        { title: "Beauty and the Beast", image: "The-beauty-and-the-beast.jpg", link: "beauty and the beast.html" },
         { title: "How to Train Your Dragon: The Hidden World", image: "train-your-dragon.jpg", link: "HTTYD.html" },
         { title: "Wall-E", image: "wall-e.jpg", link: "wall e.html" },
         { title: "The Sound of Music", image: "the-sound-of-music.jpg", link: "the sound of music.html" },
-        { title: "The Greatest Showman", image: "the-greatest-showman.jpg", link: "the greatest showman.html" },
+        { title: "The Greatest Showman", image: "The-greatest-showman.jpg", link: "the greatest showman.html" },
         { title: "Trolls", image: "trolls.jpg", link: "trolls.html" },
         { title: "Alvin and the Chipmunks: The Road Chip", image: "alvin-n-the-chipmunk.jpg", link: "ANTC.html" },
         { title: "Forest Gump", image: "forest-gump.jpg", link: "forest gump.html" },
@@ -57,7 +57,7 @@ const movieData = {
     comedy: [
         { title: "Parasite", image: "parasite.jpg", link: "parasite.html" },
         { title: "Barbie (2023)", image: "Barbie.jpg", link: "barbie.html" },
-        { title: "Red One", image: "red-one.jpg", link: "red one.html" },
+        { title: "Red One", image: "Red-one.jpg", link: "red one.html" },
         { title: "Sonic The Hedgehog 3", image: "sonic-the-hedgehog.jpg", link: "sonic.html" }
     ],
     thriller: [
@@ -68,39 +68,39 @@ const movieData = {
     ],
     animation: [
         { title: "The Boy And The Heron", image: "the-boy-and-the-heron.jpg", link: "TBATH.html" },
-        { title: "Elemental", image: "elemental.jpg", link: "elemental.html" },
+        { title: "Elemental", image: "Elemental.jpg", link: "elemental.html" },
         { title: "Spirited Away", image: "Spirited-away.jpg", link: "spirited away.html" },
         { title: "Howl's The Moving Castle", image: "howl-moving-castle.jpg", link: "howls moving castle.html" },
         { title: "Sonic The Hedgehog 3", image: "sonic-the-hedgehog.jpg", link: "sonic.html" },
         { title: "Wall-E", image: "wall-e.jpg", link: "wall e.html" },
         { title: "How to Train Your Dragon: The Hidden World", image: "train-your-dragon.jpg", link: "HTTYD.html" },
-        { title: "Beauty and the Beast", image: "the-beauty-and-the-beast.jpg", link: "beauty and the beast.html" }
+        { title: "Beauty and the Beast", image: "The-beauty-and-the-beast.jpg", link: "beauty and the beast.html" }
     ],
     crime: [
         { title: "The Departed", image: "the-departed.jpg", link: "the departed.html" },
-        { title: "Anatomy Of A Fall", image: "anatomy-of-fall.jpg", link: "anatomy of fall.html" },
+        { title: "Anatomy Of A Fall", image: "Anatomy-of-fall.jpg", link: "anatomy of fall.html" },
         { title: "Juror #2", image: "juror.jpg", link: "juror.html" },
         { title: "The Godfather", image: "the-godfather.jpg", link: "the godfather.html" }
     ],
     scifi: [
         { title: "2001: A Space Odyssey", image: "a-space-odyssey.jpg", link: "a space odyssey.html" },
         { title: "The Truman Show", image: "the-truman-show.jpg", link: "the truman show.html" },
-        { title: "Transformers: The Rise of the Beasts", image: "transformers.jpg", link: "transformers.html" }
+        { title: "Transformers: The Rise of the Beasts", image: "Transformers.jpg", link: "transformers.html" }
     ],
     family: [
         { title: "Coco", image: "coco.jpg", link: "coco.html" },
-        { title: "Beauty and the Beast", image: "the-beauty-and-the-beast.jpg", link: "beauty and the beast.html" },
+        { title: "Beauty and the Beast", image: "The-beauty-and-the-beast.jpg", link: "beauty and the beast.html" },
         { title: "How to Train Your Dragon: The Hidden World", image: "train-your-dragon.jpg", link: "HTTYD.html" },
         { title: "Wall-E", image: "wall-e.jpg", link: "wall e.html" },
         { title: "The Boy And The Heron", image: "the-boy-and-the-heron.jpg", link: "TBATH.html" },
-        { title: "Elemental", image: "elemental.jpg", link: "elemental.html" },
+        { title: "Elemental", image: "elemental.jpg", link: "Elemental.html" },
         { title: "Spirited Away", image: "Spirited-away.jpg", link: "spirited away.html" },
         { title: "Howl's The Moving Castle", image: "howl-moving-castle.jpg", link: "howls moving castle.html" },
         { title: "Sonic The Hedgehog 3", image: "sonic-the-hedgehog.jpg", link: "sonic.html" }
     ],
     musical: [
         { title: "The Sound of Music", image: "the-sound-of-music.jpg", link: "the sound of music.html" },
-        { title: "The Greatest Showman", image: "the-greatest-showman.jpg", link: "the greatest showman.html" },
+        { title: "The Greatest Showman", image: "The-greatest-showman.jpg", link: "the greatest showman.html" },
         { title: "Trolls", image: "trolls.jpg", link: "trolls.html" },
         { title: "Alvin and the Chipmunks: The Road Chip", image: "alvin-n-the-chipmunk.jpg", link: "ANTC.html" }
     ],
